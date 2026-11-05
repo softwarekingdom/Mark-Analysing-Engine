@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Login - Mark Engine</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Mark<span>Engine</span></div>
+        <a href="index.html" class="login-link">Home</a>
+    </header>
+
+    <main class="auth-container">
+        <div class="auth-card">
+
+            <h1>Welcome Back</h1>
+            <p>Login to your teacher account.</p>
+
+            <form id="loginForm">
+
+                <label>Email Address</label>
+                <input type="email" id="email"
+                    placeholder="Enter your email" required>
+
+                <label>Password</label>
+                <input type="password" id="password"
+                    placeholder="Enter your password" required>
+
+                <button type="submit" class="primary-btn">
+                    Login
+                </button>
+
+                <p id="authMessage" aria-live="polite"></p>
+            </form>
+
+            <p class="auth-bottom">
+                Don't have an account?
+                <a href="signup.html">Create Account</a>
+            </p>
+
+        </div>
+    </main>
+
+    <script src="auth.js"></script>
+</body>
+</html>
